@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PracticalTest02</string>
+    <string name="server">Server</string>
+    <string name="server_port">ServerPort</string>
+    <string name="connect">Connect</string>
+    <string name="client">Client</string>
+    <string name="client_address">Address</string>
+    <string name="client_port">Port</string>
+    <string name="valuta">Valuta</string>
+    <string name="get">GET</string>
+    <string name="valute">valute</string>
+    <string name="currency">currency</string>
+    <string name="get_bitcoin_price">get bitcoin price</string>
 </resources>

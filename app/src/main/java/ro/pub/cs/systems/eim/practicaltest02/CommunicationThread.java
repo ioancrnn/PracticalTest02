@@ -2,19 +2,16 @@ package ro.pub.cs.systems.eim.practicaltest02;
 import android.util.Log;
 
 
-import org.json.JSONArray;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import cz.msebera.android.httpclient.HttpEntity;
@@ -49,12 +46,12 @@ public class CommunicationThread extends Thread {
             // Create BufferedReader and PrintWriter instances for reading from and writing to the socket
             BufferedReader bufferedReader = Utilities.getReader(socket);
             PrintWriter printWriter = Utilities.getWriter(socket);
-            Log.i(Constants.TAG, "[COMMUNICATION THREAD] Waiting for parameters from client (valute / information type!");
+            Log.i(Constants.TAG, "[COMMUNICATION THREAD] Waiting for parameters from client (valute)");
 
             // Read the pokemon and informationType values sent by the client
             String valute = bufferedReader.readLine();
             if (valute == null) {
-                Log.e(Constants.TAG, "[COMMUNICATION THREAD] Error receiving parameters from client (valute / information type!");
+                Log.e(Constants.TAG, "[COMMUNICATION THREAD] Error receiving parameters from client (valute)");
                 return;
             }
 
